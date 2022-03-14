@@ -13,3 +13,6 @@ jobs:
         with:
           go-version: '1.16.1' # The Go version to download (if necessary) and use.
       - run: go run ./main/main.go 
+        env:
+            BUPT_USERNAME: ${{ secrets.BUPT_USERNAME }}
+            BUPT_PASSWORD: ${{ secrets.BUPT_PASSWORD }}
